@@ -27,29 +27,6 @@ namespace CalcularSueldo
             Console.ReadLine();
         }
 
-        public void SumaProducto() 
-        {
-            int numero1 = 0;
-            int numero2 = 0;
-            decimal producto= 0;
-
-            Console.WriteLine("Digite el numero1");
-            numero1 = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite el numero2");
-            numero2 = int.Parse(Console.ReadLine());
-
-
-            producto = (numero1 + numero2);
-
-            Console.WriteLine($"La suma es:{producto}");
-
-            Console.ReadLine();
-            
-         
-
-        
-        }
     }
-
+    
 }

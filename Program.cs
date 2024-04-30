@@ -1,5 +1,7 @@
-﻿namespace CalcularSueldo
- {
+﻿using System;
+
+namespace CalcularSueldo
+{
     public class Program
     {
         static void Main(string[] args)
@@ -8,8 +10,11 @@
 
             calcular.CalcularSueldo();
 
-            calcular.SumaProducto();
-        }
+            SumaProducto sumaProducto = new SumaProducto();
+            sumaProducto.RealizaSumaProducto();
+
+
+    }
      
     }
 }
