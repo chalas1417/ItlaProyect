@@ -1,9 +1,11 @@
-﻿using System;
+﻿using CalcularSueldo.Tarea2;
+using System;
 
 namespace CalcularSueldo
 {
     public class SumaProducto
     {
+      
         public void RealizaSumaProducto()
         {
             int numero1 = 0;
@@ -24,11 +26,11 @@ namespace CalcularSueldo
 
                 producto = (numero1 * numero2);
 
-                Console.WriteLine("La suma es:" + Convert.ToString(suma) + " & el producto es:" +Convert.ToString (producto));
+                Console.WriteLine("La suma es:" + Convert.ToString(suma) + " & el producto es:" +Convert.ToString(producto));
                 Console.ReadLine();
 
             }
-            catch (Exception ex )
+            catch (Exception ex)
             {
                 Console.WriteLine($"Ocurrio el siguiente error:{ex.Message}");
 
@@ -36,5 +38,7 @@ namespace CalcularSueldo
 
            
         }
+    
+        
     }
 }

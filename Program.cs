@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CalcularSueldo.Tarea2;
+using System;
 
 namespace CalcularSueldo
 {
@@ -6,7 +7,19 @@ namespace CalcularSueldo
     {
         static void Main(string[] args)
         {
+            Promedio promedio = new Promedio();
+            promedio.MostrarPromedio();
+
             Calcular calcular = new Calcular();
+            Perimetro perimetro = new Perimetro();
+
+            string lado = perimetro.CalcularPerimetro(4);
+            Console.WriteLine(lado);
+
+            Suma suma = new Suma();
+            suma.CalcalarSuma();
+
+
 
             calcular.CalcularSueldo();
 
@@ -14,8 +27,11 @@ namespace CalcularSueldo
             sumaProducto.RealizaSumaProducto();
 
 
-    }
-     
+
+
+
+        }
+
     }
 }
 
