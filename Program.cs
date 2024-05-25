@@ -7,6 +7,8 @@ namespace CalcularSueldo
     {
         static void Main(string[] args)
         {
+            multiplicar multiplicar = new multiplicar();
+            multiplicar.multi();
             Promedio promedio = new Promedio();
             promedio.MostrarPromedio();
 
