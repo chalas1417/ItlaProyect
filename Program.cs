@@ -7,8 +7,14 @@ namespace CalcularSueldo
     public class Program
     {
         static void Main(string[] args)
-          {
-            
+        {
+            EmpleadoComision empleadoComision = new EmpleadoComision("Alvaro","Blanco","123456",5,6);
+
+            EmpleadoAsalariado empleadoAsalariado = new EmpleadoAsalariado("", "", "", 4);
+
+            EmpleadoPorHora empleadoPorHora = new EmpleadoPorHora("", "", "", 2, 3);
+
+            EmpleadoBaseMasComision empleadoBaseMasComision = new EmpleadoBaseMasComision("", "", "", 8, 9, 1);
 
             multiplicar multiplicar = new multiplicar();
             multiplicar.multi();
