@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace CalcularSueldo
 {
@@ -8,13 +9,13 @@ namespace CalcularSueldo
 
         public void CalcularSueldo()
         {
-            int horasTrabajadas = 0;
-            int costoHoras = 0;
+            decimal horasTrabajadas = 0;
+            decimal costoHoras = 0;
             decimal sueldo = 0;
 
 
             Console.WriteLine("Digite las horas trabajadas");
-            horasTrabajadas= Convert.ToInt32(Console.ReadLine());
+            horasTrabajadas= Int32Converter(Console.ReadLine());
 
             Console.WriteLine("Dgite el costo de las horas");
             costoHoras= int.Parse(Console.ReadLine());
@@ -27,6 +28,10 @@ namespace CalcularSueldo
             Console.ReadLine();
         }
 
+        private int Int32Converter(string v)
+        {
+            throw new NotImplementedException();
+        }
     }
     
 }

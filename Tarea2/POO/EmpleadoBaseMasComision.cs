@@ -1,16 +1,16 @@
-﻿
+﻿using System;
 
 namespace CalcularSueldo.Tarea2.POO
 {
     public class EmpleadoBaseMasComision : EmpleadoComision
     {
-        public decimal SalarioBase;
+        public decimal SalarioBase = 0;
 
-        public EmpleadoBaseMasComision(string PrimerNombre, 
+        public EmpleadoBaseMasComision(string PrimerNombre,
             string ApellidoPaterno,
             string NumeroSeguroSocial,
-            decimal salarioBase,decimal tarifacomision, decimal ventasBrutas)
-        : base(PrimerNombre, ApellidoPaterno, 
+            decimal salarioBase, decimal tarifacomision, decimal ventasBrutas)
+        : base(PrimerNombre, ApellidoPaterno,
               NumeroSeguroSocial, tarifacomision, ventasBrutas)
         {
             SalarioBase = salarioBase;
@@ -18,11 +18,18 @@ namespace CalcularSueldo.Tarea2.POO
             VentasBrutas = ventasBrutas;
         }
 
-        public override decimal CalcularIngreso() 
-        {
+        public override decimal CalcularIngreso()
 
-            return (TarifaComision * VentasBrutas) + VentasBrutas; 
-            
+        {
+            try
+            {
+                TarifaComision = (TarifaComision* VentasBrutas + SalarioBase);
+                return TarifaComision;
+            }
+            catch
+            {
+                return TarifaComision;
+            }
         }
     }
 }

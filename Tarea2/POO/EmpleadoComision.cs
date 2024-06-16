@@ -1,13 +1,10 @@
-﻿
-using System.Runtime.Remoting.Messaging;
-
-namespace CalcularSueldo.Tarea2.POO
+﻿namespace CalcularSueldo.Tarea2.POO
 {
     public class EmpleadoComision : Emplleado2
     {
         public decimal VentasBrutas;
 
-        public decimal TarifaComision;
+        public decimal TarifaComision = 0;
 
         public EmpleadoComision(string PrimerNombre,
             string ApellidoPaterno,
@@ -21,9 +18,14 @@ namespace CalcularSueldo.Tarea2.POO
         }
         public override decimal CalcularIngreso()
         {
-
-            return TarifaComision * VentasBrutas;
-
+            try
+            {
+                return (TarifaComision * VentasBrutas);
+            }
+            catch
+            {
+                return TarifaComision;
+            }
         }
 
 

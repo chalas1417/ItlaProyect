@@ -2,7 +2,7 @@
 {
     public class EmpleadoPorHora : Emplleado2
     {
-        private decimal SueldoPorHora;
+        private decimal SueldoPorHora = 0;
         private decimal HorasTrabajadas;
         public EmpleadoPorHora(string primerNombre,
             string apellidoPaterno,
@@ -16,18 +16,25 @@
         }
         public override decimal CalcularIngreso()
         {
-            if (HorasTrabajadas <=
-                40)
+            try
             {
-                SueldoPorHora = SueldoPorHora * HorasTrabajadas;
+                if (HorasTrabajadas <= 40)
+                {
+                    SueldoPorHora = SueldoPorHora * HorasTrabajadas;
+                }
+                else
+                {
+                    SueldoPorHora = (40 * SueldoPorHora) +
+                        (HorasTrabajadas - 40) *
+                        (SueldoPorHora * (decimal)1.5);
+
+                }
+                return SueldoPorHora;
             }
-            else
+            catch
             {
-                SueldoPorHora = (40 * SueldoPorHora) +
-                    (HorasTrabajadas - 40) *
-                    (SueldoPorHora * (decimal)1.5);
+                return SueldoPorHora;
             }
-            return SueldoPorHora;
         }
     }
 }

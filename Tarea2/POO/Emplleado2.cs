@@ -1,6 +1,4 @@
-﻿
-
-namespace CalcularSueldo.Tarea2.POO
+﻿namespace CalcularSueldo.Tarea2.POO
 {
     public abstract class Emplleado2
     {
@@ -14,7 +12,6 @@ namespace CalcularSueldo.Tarea2.POO
             NumeroSeguridadSocial = numeroSeguroSocial;
         }
         public abstract decimal CalcularIngreso();
-
 
     }
 }
