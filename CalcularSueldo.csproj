@@ -49,6 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SumaProducto.cs" />
     <Compile Include="Tarea2\multiplicar.cs" />
+    <Compile Include="Tarea2\NumeroPositivo.cs" />
     <Compile Include="Tarea2\POO\Administrador.cs" />
     <Compile Include="Tarea2\POO\Administrativo.cs" />
     <Compile Include="Tarea2\POO\Docente.cs" />

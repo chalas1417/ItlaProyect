@@ -105,6 +105,8 @@ namespace CalcularSueldo
 
 
 
+            NumeroPositivo numeroPositivo = new NumeroPositivo();
+            numeroPositivo.Positivo();
 
 
 

@@ -6,7 +6,7 @@ namespace CalcularSueldo.Tarea2
 {
     public class NumeroPositivo
     { 
-        public void Positiv()
+        public void Positivo()
         {
             Console.Write("Ingrese un número positivo de uno o dos dígitos (1..99): ");
             string input = Console.ReadLine();
