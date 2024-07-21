@@ -1,5 +1,4 @@
 ﻿
-
 namespace CalcularSueldo.Tarea2.POO
 {
     public class Docente:Empleado

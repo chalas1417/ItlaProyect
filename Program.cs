@@ -8,6 +8,29 @@ namespace CalcularSueldo
     {
         static void Main(string[] args)
         {
+            Personas personas = new Personas("Diana", new DateTime(1990, 2, 03), "Rep Dom");
+            personas.MostrarInformacion();
+
+            Estudiantes estudiantes = new Estudiantes("Juan ", new DateTime(1990, 7, 20), "Madrid", "Ingeniería Informática", "A123456");
+
+            estudiantes.MostrarInformacion();
+
+
+
+            Rectangulo rectangulo = new Rectangulo(5, 10);
+            Circulo circulo = new Circulo(7);
+            Triangulo triangulo = new Triangulo(6, 8);
+
+            // Calcular y mostrar el área de cada figura
+            Console.WriteLine($"Área del rectángulo: {rectangulo.CalcularArea()}");
+            Console.WriteLine($"Área del círculo: {circulo.CalcularArea()}");
+            Console.WriteLine($"Área del triángulo: {triangulo.CalcularArea()}");
+
+
+
+
+
+
             Console.WriteLine("Ingrese el nombre del empleado por comision:");
             string empleadoComisionNombre = Console.ReadLine();
 

@@ -60,9 +60,12 @@
     <Compile Include="Tarea2\POO\EmpleadoPorHora.cs" />
     <Compile Include="Tarea2\POO\Emplleado2.cs" />
     <Compile Include="Tarea2\POO\Estudiante.cs" />
+    <Compile Include="Tarea2\POO\Estudiantes.cs" />
     <Compile Include="Tarea2\POO\Ex-Alumno.cs" />
+    <Compile Include="Tarea2\POO\Figura.cs" />
     <Compile Include="Tarea2\POO\Maestro.cs" />
     <Compile Include="Tarea2\POO\MiembroDeLaComunidad.cs" />
+    <Compile Include="Tarea2\POO\Personas.cs" />
     <Compile Include="Tarea2\Promedio.cs" />
     <Compile Include="Tarea2\Suma.cs" />
   </ItemGroup>
